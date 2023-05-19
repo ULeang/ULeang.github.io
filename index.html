@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="ulya"/>
+    <meta name="description" content="my web from scratch"/>
+    <!-- <link hrel="myicon.png" rel="icon"/> -->
+    <title>ULya</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>ULya's Web From Scratch</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li><a href="#">Learning</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="./pages/history.html">History</a></li>
+      </ul>
+      <form>
+        <input type="search" name="q" placeholder="Search.."/>
+        <input type="submit" value="&gt;&gt;="/>
+      </form>
+    </nav>
+
+    <main>
+      <section id="my-fav">
+        <h2>My favorite</h2>
+        <a href="https://www.haskell.org/" title="An advanced, purely functional programming language">λHaskell</a>
+        <blockquote cite="https://www.haskell.org/#code-example"><code><pre>
+primes = filterPrime [2..] where
+  filterPrime (p:xs) =
+    p : filterPrime [x | x &lt;- xs, x `mod` p /= 0]</pre></code>
+        </blockquote>
+      </section>
+      <section id="my-pc">
+        <h2>My PC</h2>
+        <p>
+        <a href="https://archlinux.org/" title="A simple, lightweight distribution">Archlinux</a>,linux-zen,x86_64<br/>
+        <a href="https://hyprland.org/" title="A dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks. ">Hyprland</a>
+        </p>
+        <a href="#">more info</a>
+      </section>
+      <aside>
+        <h3>this page</h3>
+        <ul>
+          <li><a href="#my-fav">My favorite</a></li>
+          <li><a href="#my-pc">My PC</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Maybe it's the time to start</p>
+    </footer>
+  </body>
+</html>
