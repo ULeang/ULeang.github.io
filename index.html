@@ -16,8 +16,8 @@
     <nav>
       <ul>
         <li>Home</li>
-        <li><a href="#">Learning</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="./pages/learning.html">Learning</a></li>
+        <li><a href="./pages/contact.html">Contact</a></li>
         <li><a href="./pages/history.html">History</a></li>
       </ul>
       <form>
@@ -29,13 +29,14 @@
     <main>
       <section id="my-fav">
         <h2>My favorite</h2>
-        <a href="https://www.haskell.org/" title="An advanced, purely functional programming language">λHaskell</a>
+        λ<a href="https://www.haskell.org/" title="An advanced, purely functional programming language">Haskell</a>
         <blockquote cite="https://www.haskell.org/#code-example"><code><pre>
 primes = filterPrime [2..] where
   filterPrime (p:xs) =
     p : filterPrime [x | x &lt;- xs, x `mod` p /= 0]</pre></code>
         </blockquote>
       </section>
+
       <section id="my-pc">
         <h2>My PC</h2>
         <p>
@@ -44,6 +45,7 @@ primes = filterPrime [2..] where
         </p>
         <a href="#">more info</a>
       </section>
+
       <aside>
         <h3>this page</h3>
         <ul>
@@ -55,6 +57,7 @@ primes = filterPrime [2..] where
 
     <footer>
       <p>Maybe it's the time to start</p>
+      <p><b>ulya</b></p>
     </footer>
   </body>
 </html>
