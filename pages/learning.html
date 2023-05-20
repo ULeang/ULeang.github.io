@@ -6,53 +6,58 @@
     <meta name="description" content="my web from scratch"/>
     <!-- <link hrel="myicon.png" rel="icon"/> -->
     <title>ULya</title>
+    <link rel="stylesheet" href="../styles/style.css"/>
   </head>
 
   <body>
+    <nav>
+      <ul id="nav-bar">
+        <li><a class="nav-link" href="../index.html">Home</a></li>
+        <li><span id="cur-page" class="nav-link">Learning</span></li>
+        <li><a class="nav-link" href="./contact.html">Contact</a></li>
+        <li><a class="nav-link" href="./history.html">History</a></li>
+      </ul>
+      <!-- <form> -->
+      <!--   <input type="search" name="q" placeholder="Search.."/> -->
+      <!--   <input type="submit" value="&gt;&gt;="/> -->
+      <!-- </form> -->
+    </nav>
+
     <header>
       <h1>ULya's Web From Scratch</h1>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li>Learning</li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./history.html">History</a></li>
-      </ul>
-      <form>
-        <input type="search" name="q" placeholder="Search.."/>
-        <input type="submit" value="&gt;&gt;="/>
-      </form>
-    </nav>
-
     <main>
-      <section id="resource">
-        <h2>Resources</h2>
-        <dl>
-          <dt><a href="https://wiki.archlinux.org/">ArchWiki</a></dt>
-          <dd>Almost everything you want to know about Arch</dd>
-          <dt><a href="https://wiki.haskell.org/Haskell">HaskellWiki</a></dt>
-          <dd>Learn Haskell!</dd>
-          <dt><a href="https://wiki.hyprland.org/">HyprlandWiki</a></dt>
-          <dd>Use Hyprland to improve your linux experience</dd>
-          <dt><a href="https://developer.mozilla.org/en-US/docs/Learn/">MDN-Guides</a></dt>
-          <dd>I learn from this guide to build this site</dd>
-          <dt><a href="https://cmake.org/cmake/help/latest/guide/tutorial/">CMakeTutorial</a></dt>
-          <dd>I don't like it, but sometimes I need it</dd>
-          <dt><a href="https://www.linuxfromscratch.org/">LinuxFromScratch</a></dt>
-          <dd>Someday I will build my own distro</dd>
-          <dt><a href="https://en.cppreference.com/w/">CppReference</a></dt>
-          <dd>Cpp:from beginner to loser</dd>
-        </ul>
-      </section>
+      <div>
+        <section id="resource">
+          <h2>Resources</h2>
+          <div>
+            <dl>
+              <dt><a href="https://wiki.archlinux.org/">ArchWiki</a></dt>
+              <dd>Almost everything you want to know about Arch</dd>
+              <dt><a href="https://wiki.haskell.org/Haskell">HaskellWiki</a></dt>
+              <dd>Learn Haskell!</dd>
+              <dt><a href="https://wiki.hyprland.org/">HyprlandWiki</a></dt>
+              <dd>Use Hyprland to improve your linux experience</dd>
+              <dt><a href="https://developer.mozilla.org/en-US/docs/Learn/">MDN-Guides</a></dt>
+              <dd>I learn from this guide to build this site</dd>
+              <dt><a href="https://cmake.org/cmake/help/latest/guide/tutorial/">CMakeTutorial</a></dt>
+              <dd>I don't like it, but sometimes I need it</dd>
+              <dt><a href="https://www.linuxfromscratch.org/">LinuxFromScratch</a></dt>
+              <dd>Someday I will build my own distro</dd>
+              <dt><a href="https://en.cppreference.com/w/">CppReference</a></dt>
+              <dd>Cpp:from beginner to loser</dd>
+            </dl>
+          </div>
+        </section>
+      </div>
 
-      <aside>
-        <h3>this page</h3>
-        <ul>
-          <li><a href="#resource">Resources</a></li>
-        </ul>
-      </aside>
+      <!-- <aside> -->
+      <!--   <h3>this page</h3> -->
+      <!--   <ul> -->
+      <!--     <li><a href="#resource">Resources</a></li> -->
+      <!--   </ul> -->
+      <!-- </aside> -->
     </main>
 
     <footer>

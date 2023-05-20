@@ -6,48 +6,51 @@
     <meta name="description" content="my web from scratch"/>
     <!-- <link hrel="myicon.png" rel="icon"/> -->
     <title>ULya</title>
+    <link rel="stylesheet" href="../styles/style.css"/>
   </head>
 
   <body>
+    <nav>
+      <ul id="nav-bar">
+        <li><a class="nav-link" href="../index.html">Home</a></li>
+        <li><a class="nav-link" href="./learning.html">Learning</a></li>
+        <li><span id="cur-page" class="nav-link">Contact</span></li>
+        <li><a class="nav-link" href="./history.html">History</a></li>
+      </ul>
+    </nav>
+
     <header>
       <h1>ULya's Web From Scratch</h1>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./learning.html">Learning</a></li>
-        <li>Contact</li>
-        <li><a href="./history.html">History</a></li>
-      </ul>
-      <form>
-        <input type="search" name="q" placeholder="Search.."/>
-        <input type="submit" value="&gt;&gt;="/>
-      </form>
-    </nav>
-
     <main>
-      <section id="email">
-        <h2>Email</h2>
-        <p>
-        <a href="mailto:ULeang@outlook.com?subject=From Web:">send mail to me</a>:ULeang@outlook.com
-        </p>
-      </section>
+      <div>
+        <section id="email">
+          <h2>Email</h2>
+          <div>
+            <p>
+            <a href="mailto:ULeang@outlook.com?subject=From Web:">ULeang@outlook.com</a>
+            </p>
+          </div>
+        </section>
 
-      <section id="github">
-        <h2>Github</h2>
-        <p>
-        <a href="https://github.com/ULeang/">ULeang</a>
-        </p>
-      </section>
+        <section id="github">
+          <h2>Github</h2>
+          <div>
+            <p>
+            <a href="https://github.com/ULeang/">ULeang</a>
+            </p>
+          </div>
+        </section>
+      </div>
 
-      <aside>
-        <h3>this page</h3>
-        <ul>
-          <li><a href="#email">Email</a></li>
-          <li><a href="#github">Github</a></li>
-        </ul>
-      </aside>
+      <!--   <aside> -->
+      <!--     <h3>this page</h3> -->
+      <!--     <ul> -->
+      <!--       <li><a href="#email">Email</a></li> -->
+      <!--       <li><a href="#github">Github</a></li> -->
+      <!--     </ul> -->
+      <!--   </aside> -->
     </main>
 
     <footer>

@@ -6,53 +6,60 @@
     <meta name="description" content="my web from scratch"/>
     <!-- <link hrel="myicon.png" rel="icon"/> -->
     <title>ULya</title>
+    <link rel="stylesheet" href="./styles/style.css"/>
   </head>
 
   <body>
+    <nav>
+      <ul id="nav-bar">
+        <li><span id="cur-page" class="nav-link">Home</span></li>
+        <li><a class="nav-link" href="./pages/learning.html">Learning</a></li>
+        <li><a class="nav-link" href="./pages/contact.html">Contact</a></li>
+        <li><a class="nav-link" href="./pages/history.html">History</a></li>
+      </ul>
+      <!-- <form> -->
+      <!--   <input type="search" name="q" placeholder="Search.."/> -->
+      <!--   <input type="submit" value="&gt;&gt;="/> -->
+      <!-- </form> -->
+    </nav>
+
     <header>
       <h1>ULya's Web From Scratch</h1>
     </header>
 
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li><a href="./pages/learning.html">Learning</a></li>
-        <li><a href="./pages/contact.html">Contact</a></li>
-        <li><a href="./pages/history.html">History</a></li>
-      </ul>
-      <form>
-        <input type="search" name="q" placeholder="Search.."/>
-        <input type="submit" value="&gt;&gt;="/>
-      </form>
-    </nav>
-
     <main>
-      <section id="my-fav">
-        <h2>My favorite</h2>
-        λ<a href="https://www.haskell.org/" title="An advanced, purely functional programming language">Haskell</a>
-        <blockquote cite="https://www.haskell.org/#code-example"><code><pre>
-primes = filterPrime [2..] where
+      <div>
+        <section id="my-fav">
+          <h2>My favorite</h2>
+          <div>
+            λ<a href="https://www.haskell.org/" title="An advanced, purely functional programming language">Haskell</a>
+            <blockquote cite="https://www.haskell.org/#code-example">
+              <pre><code>primes = filterPrime [2..] where
   filterPrime (p:xs) =
-    p : filterPrime [x | x &lt;- xs, x `mod` p /= 0]</pre></code>
-        </blockquote>
-      </section>
+    p : filterPrime [x | x &lt;- xs, x `mod` p /= 0]</code></pre>
+            </blockquote>
+          </div>
+        </section>
 
-      <section id="my-pc">
-        <h2>My PC</h2>
-        <p>
-        <a href="https://archlinux.org/" title="A simple, lightweight distribution">Archlinux</a>,linux-zen,x86_64<br/>
-        <a href="https://hyprland.org/" title="A dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks. ">Hyprland</a>
-        </p>
-        <a href="#">more info</a>
-      </section>
+        <section id="my-pc">
+          <h2>My PC</h2>
+          <div>
+            <p>
+            <a href="https://archlinux.org/" title="A simple, lightweight distribution">Archlinux</a>,linux-zen,x86_64<br/>
+            <a href="https://hyprland.org/" title="A dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks. ">Hyprland</a>
+            </p>
+            <a href="#">more info</a>
+          </div>
+        </section>
+      </div>
 
-      <aside>
-        <h3>this page</h3>
-        <ul>
-          <li><a href="#my-fav">My favorite</a></li>
-          <li><a href="#my-pc">My PC</a></li>
-        </ul>
-      </aside>
+      <!--   <aside> -->
+      <!--     <h3>this page</h3> -->
+      <!--     <ul> -->
+      <!--       <li><a href="#my-fav">My favorite</a></li> -->
+      <!--       <li><a href="#my-pc">My PC</a></li> -->
+      <!--     </ul> -->
+      <!--   </aside> -->
     </main>
 
     <footer>
