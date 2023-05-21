@@ -7,10 +7,11 @@
     <!-- <link hrel="myicon.png" rel="icon"/> -->
     <title>ULya</title>
     <link rel="stylesheet" href="./styles/style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/script.js" defer></script>
   </head>
 
   <body>
@@ -21,12 +22,14 @@
         <li><a class="nav-link" href="./pages/contact.html">Contact</a></li>
         <li><a class="nav-link" href="./pages/history.html">History</a></li>
       </ul>
-      <a class="a_button" id="repo" href="https://github.com/ULeang/ULeang.github.io">repo</a>
+      <a class="button a_button" id="repo" href="https://github.com/ULeang/ULeang.github.io">repo</a>
       <!-- <form> -->
       <!--   <input type="search" name="q" placeholder="Search.."/> -->
       <!--   <input type="submit" value="&gt;&gt;="/> -->
       <!-- </form> -->
     </nav>
+
+    <p class="button mob-button mob" id="mob-menu">≡</p>
 
     <header>
       <h1>ULya's Web From Scratch</h1>
@@ -37,7 +40,7 @@
         <section class="sec-main" id="my-fav">
           <h2>My favorite</h2>
           <div class="box-sec">
-            λ<a href="https://www.haskell.org/" title="An advanced, purely functional programming language">Haskell</a>
+            <p>λ<a href="https://www.haskell.org/" title="An advanced, purely functional programming language">Haskell</a></p>
             <blockquote cite="https://www.haskell.org/#code-example">
               <pre><code>primes = filterPrime [2..] where
   filterPrime (p:xs) =

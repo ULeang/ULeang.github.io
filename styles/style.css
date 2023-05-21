@@ -1,3 +1,15 @@
+@font-face {
+  font-family:"Fira Code";
+  src:url("../images/FiraCodeNerdFont-Regular.ttf");
+  font-weight:normal;
+}
+
+@font-face {
+  font-family:"Fira Code";
+  src:url("../images/FiraCodeNerdFont-Bold.ttf");
+  font-weight:bold;
+}
+
 *{
   box-sizing:border-box;
   margin:0;
@@ -27,6 +39,10 @@ nav{
   height:4rem;
 }
 
+.mob{
+  display:none;
+}
+
 #nav-bar{
   display:flex;
 }
@@ -38,7 +54,7 @@ nav{
   height:1.5rem;
 }
 
-nav a{
+#nav-bar a{
   text-decoration:none;
   border-bottom:none;
 }
@@ -47,7 +63,7 @@ nav a{
   border-bottom:0.18rem solid;
 }
 
-nav a:hover{
+#nav-bar a:hover{
   color:#50d0d0;
   border-bottom:0.18rem solid;
 }
@@ -127,7 +143,7 @@ a:hover{
 }
 
 a::selection{
-  color:#ffc639;
+  color:#be1e3e;
 }
 
 a:hover::selection{
@@ -149,7 +165,7 @@ a:hover::selection{
   display:flex;
   align-items:center;
   justify-content:center;
-  transition:all 0.5s;
+  transition:transform 0.5s,color 0.5s,background-color 0.5s;
   font-weight:bold;
   margin-left:1.5rem;
 }
@@ -159,3 +175,64 @@ a:hover::selection{
   color:#50d0d0;
   background-color:transparent;
 }
+
+@media screen and (max-width:600px){
+  nav{
+    position:fixed;
+    flex-direction:column;
+    align-items:center;
+    width:0vw;
+    height:100vh;
+    background:rgb(26,26,46);
+    overflow:hidden;
+    z-index:1;
+    transition:width 0.5s;
+  }
+
+  #nav-bar{
+    flex-direction:column;
+  }
+
+  #nav-bar li{
+    margin:1rem;
+  }
+
+  #repo{
+    margin-top:2rem;
+    margin-left:0;
+  }
+  
+  .mob{
+    display:unset;
+  }
+
+  #mob-menu{
+    font-size:2.5rem;
+    position:relative;
+    top:1.3rem;
+    left:90%;
+    display:block;
+    width:2rem;
+    height:2.5rem;
+    cursor:pointer;
+    /* z-index:1; */
+  }
+
+  #mob-menu:hover{
+    color:#50d0d0;
+  }
+
+  .sec-main h2{
+    width:100%;
+    text-align:center;
+    margin-bottom:1rem;
+  }
+
+  .box-sec{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+}
+
