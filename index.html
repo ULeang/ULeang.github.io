@@ -7,6 +7,10 @@
     <!-- <link hrel="myicon.png" rel="icon"/> -->
     <title>ULya</title>
     <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
@@ -28,10 +32,10 @@
     </header>
 
     <main>
-      <div>
-        <section id="my-fav">
+      <div class="box-main">
+        <section class="sec-main" id="my-fav">
           <h2>My favorite</h2>
-          <div>
+          <div class="box-sec">
             λ<a href="https://www.haskell.org/" title="An advanced, purely functional programming language">Haskell</a>
             <blockquote cite="https://www.haskell.org/#code-example">
               <pre><code>primes = filterPrime [2..] where
@@ -41,9 +45,9 @@
           </div>
         </section>
 
-        <section id="my-pc">
+        <section class="sec-main" id="my-pc">
           <h2>My PC</h2>
-          <div>
+          <div class="box-sec">
             <p>
             <a href="https://archlinux.org/" title="A simple, lightweight distribution">Archlinux</a>,linux-zen,x86_64<br/>
             <a href="https://hyprland.org/" title="A dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks. ">Hyprland</a>
